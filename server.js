@@ -81,6 +81,7 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
+app.use('/auth', authRoutes);
 
 // Configure static file serving with proper CORS and security headers
 const publicPath = path.join(__dirname, 'public');
