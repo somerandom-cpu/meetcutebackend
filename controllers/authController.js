@@ -201,8 +201,8 @@ exports.login = async (req, res) => {
 
     res.cookie('refreshToken', refreshToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
+      secure: true,
+      sameSite: 'None',
       maxAge: maxAgeMs, // Use the correctly calculated milliseconds
       path: '/api/auth'
     });
