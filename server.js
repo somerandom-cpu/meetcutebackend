@@ -44,6 +44,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://127.0.0.1:3000',
   'https://meetcute-frontend.vercel.app',
+  'https://meetcutefrom-six.vercel.app',
 ];
 
 // Enable pre-flight across-the-board
